@@ -1,11 +1,11 @@
 ﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
+    "windowsAuthentication": false, 
+    "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:16464",
-      "sslPort": 44323
+      "applicationUrl": "http://localhost:35464",
+      "sslPort": 44352
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "MicroRabbit.Banking.Api": {
+    "MicroRabbit.Application.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger/index.html",
