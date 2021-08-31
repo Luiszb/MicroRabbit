@@ -1,5 +1,6 @@
 ﻿using MicroRabbit.Banking.Domain.Models;
 using MicroRabbit_Banking.Application.Interfaces;
+using MicroRabbit_Banking.Application.Models;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,13 @@ namespace MicroRabbit.Application.Api.Controllers
         public ActionResult<IEnumerable<Account>> Get()
         {
             return Ok(_accountServices.GetAccounts());
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] AccountTransfer accountTransfer)
+        {
+            _accountServices.Transfer(accountTransfer);
+            return Ok(accountTransfer);
         }
     }
 }
