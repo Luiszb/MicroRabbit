@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Transfer Site</h1>
+</div>
+
+<form action="/home/transfer" method="post">
+    <label for="FromAccount">From Account:</label>
+    <input type="text" name="FromAccount" />
+    <label for="ToAccount">To Account:</label>
+    <input type="text" name="ToAccount" />
+    <label for="TransferAmount">Transfer Amount:</label>
+    <input type="number" name="TransferAmount" />
+    <label for="TransferNotes">Transfer Notes:</label>
+    <textarea name="TransferNotes"></textarea>
+    <button type="submit">Transfer</button>
+</form>
