@@ -2,7 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
-    <RootNamespace>MicroRabbit_Banking.Application</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
